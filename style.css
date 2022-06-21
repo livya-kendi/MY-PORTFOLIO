@@ -4,3 +4,51 @@ color: blueviolet;
 body{
     background-color: bisque;
 }
+
+.sidebar{
+ background-color: aliceblue;
+ width: 300px;
+ position: fixed;
+ top:0;
+ left:0;
+ z-index:10;
+ opacity: 1;
+ height: 100%;
+}
+.sidebar .nav{
+    margin-top: 100px;
+
+}
+ul{
+    list-style: none;
+}
+.content{
+    background-color: bisque;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left:300px;
+    top:0;
+    right: 0;
+    opacity: 1;
+    z-index:0;
+}
+
+.sidebar .nav li {
+    margin-bottom: 20px;
+    display:block;
+}
+
+.sidebar .nav li a {
+    color:darkolivegreen;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    padding: 5px 15px;
+    border-bottom: 4px solid whitesmoke;
+}
+
+.sidebar .nav li a.active{
+    margin-right: 55px;
+    padding: 5px 15px;
+}
