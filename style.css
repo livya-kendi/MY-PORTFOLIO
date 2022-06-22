@@ -29,7 +29,7 @@ a{
     display: block;
     padding: 0px 30px;
     opacity: 1;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .sidebar .nav li {
@@ -43,9 +43,13 @@ a{
     font-size: 20px;
     display: block;
     padding: 5px 15px;
-    border-bottom: 4px solid rgb(234, 190, 136);
     max-width: 50%;
     border-radius: 8px;
+    background-color:#8FBCBC;
+}
+
+.sidebar .nav li a:hover{
+    background-color: rgb(234, 190, 136);
 }
 
 .sidebar .nav li a.icon{
@@ -64,6 +68,7 @@ a{
     text-align:justify;
     margin-right: 20px;
 }
+
 #home .home-info .home-img{
     flex: 0 0 40%;
     max-width: 40%;
@@ -88,7 +93,7 @@ a{
     margin: 30px 0;
 }
 
-#home-info h3.welcome span{
+.home-info h3.welcome span{
    font-family: Courier, monospace; 
    font-size: 30px;
    font-weight: 700px;
@@ -96,14 +101,14 @@ a{
 
 }
 
-#home-info h3.profession1 {
-    font-size: 30px;
+.home-info h3.profession1 {
+    font-size: 25px;
     margin: 15px 0;
 }
-#home-info .type{
+.home-info .type{
    color: darkolivegreen; 
 }
-#home-info p {
+.home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: rgb(13, 12, 12);
@@ -136,7 +141,7 @@ a{
     margin-bottom: 50px;
 }
 .title h2{
-    font-size: 40px;
+    font-size: 42px;
     color: darkolivegreen;
     font-weight: 700;
     position: relative;
@@ -167,29 +172,33 @@ a{
 /* ABout */
 #about{
     margin-top: 60px;
+    
 }
 #about .about-info{
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 15px;
+   
 }
 
 #about .about-info .about-text{
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 15px;
+    
 }
 #about .about-info .about-text h3{
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 15px;
     font-weight: 700;
     color: black;
 }
 #about .about-info .about-text h3 span{
     color: darkolivegreen;
+    font-size: 30px;
 }
-.about .about-info .about-text p {
-    font-size: 16px;
+#about .about-info .about-text p {
+    font-size: 20px;
     line-height: 25px;
     color: black;
 }
@@ -201,12 +210,12 @@ a{
 }
 #about .row .personal-info p{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
 }
 #about .row .personal-info p span{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     color: darkolivegreen;
     margin-left: 4px;
 }
@@ -228,44 +237,49 @@ a{
 .skill-item-mining{
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 40px; 
+    margin-top: 0px; 
     padding-left: 15px;
     float: left;
-
+    
 }
 .skill-item-mining h4{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 25px;
+    color: darkolivegreen;
 }
 .skill-item-mining h5{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+    font-size: 20px;
     
 }
 .skill-item-sd{
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 40px; 
+    margin-top: 0px; 
     padding-left: 15px;
     display: block;
     float: right;
 }
 .skill-item-sd h4{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
-    margin-bottom: 20px; 
+    font-size: 25px;
+    color: darkolivegreen;
 }
 .skill-item-sd h5{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+    font-size: 20px;
+   
 }
 
 /* CONTACT*/
 #contact-sect{
-    margin-top: 30%;
+    margin-top: 32%;
     max-width: 100%;
 }
 .contact-title {
