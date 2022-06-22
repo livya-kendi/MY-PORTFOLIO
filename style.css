@@ -298,3 +298,6 @@ a{
         padding-left: 0;
     }
   }
+  #socials{
+    display: inline-flex;
+  }
