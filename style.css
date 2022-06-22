@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
-h1 {
-color: blueviolet;
-}
 body{
     background-color:#8FBCBC;
     font-family: Inconsolata, sans-serif;
@@ -25,16 +22,14 @@ body{
 ul{
     list-style: none;
 }
-.home{
-    background-color: whitesmoke;
-    height: 100%;
+a{
+    text-decoration: none;
+}
+#home{
     display: block;
     padding: 0px 30px;
     opacity: 1;
-}
-
-.hidden{
-    display: none;
+    margin-top: 70px;
 }
 
 .sidebar .nav li {
@@ -48,38 +43,40 @@ ul{
     font-size: 20px;
     display: block;
     padding: 5px 15px;
-    border-bottom: 4px solid #8FBCBC;
+    border-bottom: 4px solid rgb(234, 190, 136);
+    max-width: 50%;
+    border-radius: 8px;
 }
 
-.sidebar .nav li a.active{
+.sidebar .nav li a.icon{
     margin-right: 55px;
     padding: 5px 15px;
 }
 
-.home .container{
+#home .container{
     max-width: 1100px;
     width: 100%;
     margin: auto;
 }
-.home .home-info{
+#home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
     text-align:justify;
     margin-right: 20px;
 }
-.home .home-info .home-img{
+#home .home-info .home-img{
     flex: 0 0 40%;
     max-width: 40%;
     position: relative;
     
 }
-.home .home-img img{
+#home .home-img img{
     margin: auto;
     border-radius: 10px;
     height: 400px; 
    
 }
-.home .container .row{
+#home .container .row{
     display: flex;
     flex-wrap:wrap;
     position:relative;
@@ -91,7 +88,7 @@ ul{
     margin: 30px 0;
 }
 
-.home-info h3.welcome span{
+#home-info h3.welcome span{
    font-family: Courier, monospace; 
    font-size: 30px;
    font-weight: 700px;
@@ -99,14 +96,14 @@ ul{
 
 }
 
-.home-info h3.profession1 {
+#home-info h3.profession1 {
     font-size: 30px;
     margin: 15px 0;
 }
-.home-info .type{
+#home-info .type{
    color: darkolivegreen; 
 }
-.home-info p {
+#home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: rgb(13, 12, 12);
@@ -132,34 +129,34 @@ ul{
 }
 
 
-.about .title{
+.title{
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 15px;
     margin-bottom: 50px;
 }
-.about .title h2{
+.title h2{
     font-size: 40px;
     color: darkolivegreen;
     font-weight: 700;
     position: relative;
 }
 
-.about .title h2::before{
+.title h2::before{
     content:'';
     height: 4px;
-    width: 50px;
-    background-color: azure;
+    width: 70px;
+    background-color: rgb(234, 190, 136);
     position: absolute;
     top: 100%;
     left:0;
 
 }
-.about .title h2::after{
+.title h2::after{
     content:'';
     height: 4px;
-    width: 25px;
-    background-color: azure;
+    width: 50px;
+    background-color: rgb(234, 190, 136);
     position: absolute;
     top: 100%;
     left:0;
@@ -168,24 +165,27 @@ ul{
 }
 
 /* ABout */
-.about .about-info{
+#about{
+    margin-top: 60px;
+}
+#about .about-info{
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 15px;
 }
 
-.about .about-info .about-text{
+#about .about-info .about-text{
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 15px;
 }
-.about .about-info .about-text h3{
+#about .about-info .about-text h3{
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
     color: black;
 }
-.about .about-info .about-text h3 span{
+#about .about-info .about-text h3 span{
     color: darkolivegreen;
 }
 .about .about-info .about-text p {
@@ -193,25 +193,25 @@ ul{
     line-height: 25px;
     color: black;
 }
-.about .row .personal-info{
+#about .row .personal-info{
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 40px;
     padding-left: 15px;
 }
-.about .row .personal-info p{
+#about .row .personal-info p{
     font-weight: 600;
     font-size: 16px;
     color: black;
 }
-.about .row .personal-info p span{
+#about .row .personal-info p span{
     font-weight: 400;
     font-size: 16px;
     color: darkolivegreen;
     margin-left: 4px;
 }
 
-.about .row .skills{
+#about .row #skills{
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 40px;
@@ -262,3 +262,39 @@ ul{
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+/* CONTACT*/
+#contact-sect{
+    margin-top: 30%;
+    max-width: 100%;
+}
+.contact-title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub {
+    text-align: center;
+    font-size: 18px;
+}
+
+.item2{
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+.item1{
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+.item3{
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+@media (max-width: 1199px) {
+    .sidebar{
+        left: -300px;
+    }
+    .main{
+        padding-left: 0;
+    }
+  }

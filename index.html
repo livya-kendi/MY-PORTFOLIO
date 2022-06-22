@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta name = "viewport" content="width = device - width, initial scale = 1.0">
     <link rel = "stylesheet" href = "style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   </head>
   <body>
-    <h1>Hello World!</h1>
 
     <!-- main start-->
   <div class="main">
 
     <div class="sidebar">
         <ul class="nav">
-          <li><a href="#" class="active"> Home</a></li>
-          <li><a href="#" class="active"> About Me</a></li>
-          <li><a href="#" class="active"> Skills</a></li>
-          <li><a href="#" class="active"> Contact Me</a></li>
+          <nav>
+          <li><a href="#home" class="icon"> <i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about" class="icon"> <i class="fa fa-user"></i> About Me</a></li>
+          <li><a href="#skills" class="icon"> <i class="fa fa-file"></i> Skills</a></li>
+          <li><a href="#contact-sect" class="icon"> <i class="fa fa-phone"></i> Contact Me</a></li>
+          </nav>
         </ul>
      </div>
      <!--home section start-->
-      <section class="home hidden">
+      <section id="home">
         <div class="container">
           <div class="row">
             <div class="home-info">
               <h3 class="welcome">Hello there! My name is <span class="name"> Livya Kendi Kiruja</span></h3>
               <h3 class="profession1"> I am a <span class="type"> Mining Engineer</span></h3>
               <p> I just graduated with my undergraduate, BSc. Mining and Mineral Processing Engineering from JKUAT. I am currently looking to kick-start my career.</p>
-              <a href="#contact" class="findme"> Lets Talk!</a>
+              <a href="#contact-sect" class="findme"> Lets Talk!</a>
             </div>
             <div class="home-img">
               <img src="images/IMG_6927.jpg" alt="Livya">
@@ -39,7 +41,7 @@
   <!--home section end-->
       
       <!-- About section start-->
-      <section class="about">
+      <section id="about">
           <div class="container">
               <div class="row">
                 <div class="title">
@@ -64,11 +66,11 @@
                     </div>
                     <div class="row">
                       <div class="buttons">
-                        <a href ="#" class="findme"> Download CV</a>
-                        <a href = "contact" class="findme"> Reach Out To Me</a>
+                        <a href ="/CV/LIVYA_KENDI_KIRUJA_CV.pdf" download class="findme"> Download CV</a>
+                        <a href = "#contact-sect" class="findme"> Reach Out To Me</a>
                       </div>
                     </div>
-                    <div class="skills"> 
+                    <div id="skills"> 
                       <div class="row">
                         <section class="skill-item-mining">
                           <h4> Mining Engineering</h4>
@@ -91,6 +93,41 @@
           </div>
       </section>
       <!-- About section end-->
+
+      <!--Contact me section start-->
+      <section id="contact-sect">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h2> Contact Me </h2>
+            </div>
+          </div>
+          <h3 class="contact-title"> Do You Have Any Questions For Me?</h3>
+          <h4 class="contact-sub"> ASK ME ANYTHING!</h4>
+          <div class="items">
+            <!--contact items start-->
+            <section class="item1">
+              <div class="icon"> <i class="fa fa-phone" style="font-size:24px; padding-left:10px;"></i></div>
+            <h4> Call Me on </h4>
+            <p> +254 711 261 802</p>
+            </section>
+
+            <section class="item2">
+              <div class="icon"> <i class="fa fa-whatsapp" style="font-size:24px; padding-left:10px;"></i></div>
+            <h4> WhatsApp </h4>
+            <p> +254 711 261 802</p>
+            </section>
+
+             <section class="item3">
+              <div class="icon"> <i class="fa fa-envelope" style="font-size:24px; padding-left:10px;"></i></div>
+             <h4> Email </h4>
+             <p> livyakendi1@gmail.com</p>
+             </section>
+           </div>
+            <!--contact items end-->
+        </div>
+      </section>
+      <!--Contact me section end-->
   </div>
   <!-- main end-->
     <script src ="script.js"> </script>
