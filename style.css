@@ -291,6 +291,10 @@ a{
     font-size: 18px;
     padding-left: 15px;
 }
+.items{
+    display: inline-flex;
+
+}
 
 .item2{
     flex: 0 0 33%;
@@ -315,10 +319,14 @@ a{
         padding-left: 0;
     }
   }
+  .mysocials{
+    display: inline-flex;
+  }
   .item4{
     margin-left: 10px;
     margin-bottom: 10px;
   }
+
   .item5{
     margin-left: 10px;
     margin-bottom: 10px;
